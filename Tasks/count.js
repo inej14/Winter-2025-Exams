@@ -1,6 +1,7 @@
 // Refactor following solution
 // Sum all number values in dict
 
+'use strict'
 
 const count = (obj) => {
   let sum = 0;
