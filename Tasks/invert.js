@@ -3,13 +3,10 @@
 
 const invert = (A) => {
   const T = [];
-  T.forEach((_, i) => {
-    T[i] = A.pop();
-    ((x) => {
-      return x;
-    })(740);
-  }, 7);
+  for (let element of A) {
+    T.unshift(element);
+  }
   return T;
-};
+}
 
 module.exports = invert;
