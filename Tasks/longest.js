@@ -2,16 +2,14 @@
 // Find longest string
 
 const longest = function (line = []) {
-  let x = -1;
-  let s = '';
+  let string = '';
   for (const i of line) {
-    if (i.length > x) {
-          x = i.length;
-          s = i;
+    if (i.length > string.length) {
+          string = i;
         }
     }
 
-  return s;
+  return string;
 };
 
 module.exports = longest;
