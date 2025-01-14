@@ -2,16 +2,9 @@
 // Return an array without duplicates
 
 const distinct = (data) => {
-  const A = new Set();
-  data.forEach((a) => {
-    if (A.has(a)) {
-
-    } else {
-      A.add(a);
-    }
-  });
-  return data.filter
-  (x => typeof x === 'number');
+  const setA = new Set(data);
+  const result = Array.from(setA)
+  return result;
 };
 
 module.exports = distinct;
