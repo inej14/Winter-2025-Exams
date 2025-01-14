@@ -2,10 +2,11 @@
 // Copy all values from dict except listed
 
 const except = (incomingvaluesarray, ...no) => {
-  const intermediateVariable = Object.keys(incomingvaluesarray);
   const result = {}
-  for (let Z of intermediateVariable) {
-    if (no.includes(Z)) {
+  const keys = Object.keys(incomingvaluesarray);
+  const list = [...no];
+  for (let Z of keys) {
+    if (!list.includes(Z)) {
       result[Z] = incomingvaluesarray[Z];
       }
     }
