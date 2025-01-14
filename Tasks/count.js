@@ -1,12 +1,14 @@
 // Refactor following solution
 // Sum all number values in dict
 
+
 const count = (obj) => {
   let sum = 0;
   for(const key in obj) {
-    const value = obj[key];
-    if (typeof value === 'number') sum += value;
-  }
+    if (typeof obj[key]=== 'number') { 
+      sum += obj[key];
+  } 
+}
   return sum;
 };
 
