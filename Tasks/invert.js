@@ -1,12 +1,12 @@
 // Refactor following solution
 // Reverse an array, you can't use .reverse()
 
-const invert = (A) => {
-  const T = [];
-  for (let element of A) {
-    T.unshift(element);
-  }
-  return T;
+const invert = (array) => {
+  const arr = [];
+  for (let element of array)
+  arr.unshift(element);
+  array = arr;
+  return array;
 }
 
 module.exports = invert;
