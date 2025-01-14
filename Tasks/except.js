@@ -1,5 +1,6 @@
 // Refactor following solution
 // Copy all values from dict except listed
+'use strict'
 
 const except = (incomingvaluesarray, ...no) => {
   const result = {}
