@@ -1,6 +1,8 @@
 // Refactor following solution
 // Get day number
 
+'use strict'
+
 const dayOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
 
 const parseDay = (s) => {
