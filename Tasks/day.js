@@ -1,16 +1,11 @@
 // Refactor following solution
 // Get day number
 
-const dayOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const dayOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
 
 const parseDay = (s) => {
-  let i;
-  for (i = 0; i < dayOfWeek.length; i++) {
-    if (s.startsWith(dayOfWeek[i])) {
-      return i + 1;
-    }
-  }
-  return -1;
-};
+  const index = dayOfWeek.indexOf(s);
+    return index + 1 || -1;
+    };
 
 module.exports = parseDay;
